@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid 1</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabla-container {
+    text-align: center; /* Para centrar la tabla verticalmente */
+    margin-left: 300px; /* Mover la tabla más hacia la derecha */
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: auto; /* Para centrar la tabla horizontalmente */
+  }
+
+  td {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Estilo para las celdas con rowspan */
+  td[rowspan] {
+    border: 5px solid gray;
+  }
+
+  /* Eliminar bordes de celdas sin rowspan */
+  td:not([rowspan]) {
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="tabla-container">
+  <table>
+    <tr>
+      <td rowspan="3"></td>
+      <td rowspan="3"></td>
+      <td rowspan="3"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

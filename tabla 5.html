@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla Vacía</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 200px; 
+  }
+
+  td {
+    height: 60px; 
+    border: 3px solid gray; 
+    text-align: center;
+    font-size: 16px; 
+  }
+
+  td[col] {
+    border-right: none;
+  }
+
+  td[colspan="2"] {
+    width: 100px; 
+  }
+
+  td[rowspan="2"] {
+    width: 1px; 
+  }
+
+ 
+  td:first-child {
+    width: 40px; 
+    padding-left: 20px; 
+  }
+
+  td[colspan="2"]:first-child {
+    margin-left: -20px; 
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td colspan="2"></td><td colspan="2"></td> 
+  </tr>
+  <tr>
+    <td></td><td colspan="2" class="centered-cell"></td><td colspan="2" class="aligned-cell"></td>
+  </tr>
+</table>
+
+</body>
+</html>
